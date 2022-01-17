@@ -2,7 +2,7 @@
   "name": "react-weather",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/vitjaz/react-weather",
+  "homepage": "https://vitjaz.github.io",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
