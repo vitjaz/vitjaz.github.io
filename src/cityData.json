@@ -1,0 +1,42 @@
+[
+   {
+      "id":1,
+      "title":"Лондон",
+      "titleEn": "London",
+      "lat": 51.507351,
+      "lon": -0.127758,
+      "image_url":"img/city/london.jpg"
+   },
+   {
+      "id":2,
+      "title":"Москва",
+      "titleEn": "Moscow",
+      "lat": 55.755825,
+      "lon": 37.617298,
+      "image_url":"img/city/moscow.jpg"
+   },
+   {
+      "id":3,
+      "title":"Нью-Йорк",
+      "titleEn": "New York",
+      "lat": 40.712776,
+      "lon": -74.005974,
+      "image_url":"img/city/ny.jpg"
+   },
+   {
+      "id":4,
+      "title":"Париж",
+      "titleEn": "Paris",
+      "lat": 48.856613,
+      "lon": 2.352222,
+      "image_url":"img/city/paris.jpg"
+   },
+   {
+      "id":5,
+      "title":"Санкт-Петербург",
+      "titleEn": "Saint Petersburg",
+      "lat": 59.934280,
+      "lon": 30.335098,
+      "image_url":"img/city/spb.jpg"
+   }
+]

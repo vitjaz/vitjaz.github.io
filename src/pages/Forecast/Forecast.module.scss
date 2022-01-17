@@ -1,0 +1,40 @@
+.container {
+  color: #1d2c50;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .pageContainer {
+    padding: 35px;
+
+    .pageName {
+      margin-bottom: 22px;
+      font-size: 30px;
+
+      .selectCity {
+        background-color: transparent;
+        font-family: inherit;
+        font-size: 25px;
+        cursor: pointer;
+        line-height: inherit;
+        color: #1d2c50;
+        font-weight: bold;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        outline: none;
+        &:focus {
+          border-color: #6a58f3;
+        }
+      }
+    }
+
+    .chartContainer {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  color: #1d2c50;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .pageContainer {
+    padding: 35px;
+
+    .pageName {
+      margin-bottom: 22px;
+      font-size: 30px;
+    }
+  }
+}

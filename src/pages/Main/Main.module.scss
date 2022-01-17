@@ -1,0 +1,44 @@
+.container {
+  color: #1d2c50;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .pageContainer {
+    padding: 35px;
+  }
+
+  .pageName {
+    margin-bottom: 22px;
+    font-size: 30px;
+  }
+
+  .cityCardBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  .weatherContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .leftBlock {
+      flex: 1;
+      .headerLeftBlock {
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        opacity: 0.7;
+      }
+    }
+
+    .rightBlock {
+      flex: 2;
+    }
+  }
+}
