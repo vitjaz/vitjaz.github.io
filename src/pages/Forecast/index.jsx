@@ -135,7 +135,7 @@ function Forecast() {
         </h2>
 
          <div className={styles.chartContainer}>
-           <Chart type='bar' options={options} data={data} />
+           {/* <Chart type='bar' options={options} data={data} /> */}
          </div>
 
       </div>
