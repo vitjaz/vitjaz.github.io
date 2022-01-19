@@ -135,7 +135,7 @@ function App (){
         <div className="routesContainer">
           <Routes>
             <Route exact path="/" element={<Main activeCity={activeCity} cityCardArr={cityCardArr} currentWeather={currentWeather} currentDateTime={currentDateTime} changeActiveCity={changeActiveCity} />}></Route>
-            <Route path="/forecast" element={<Forecast cityCardArr={cityCardArr} />}></Route>
+            <Route path="/forecast" element={<Forecast />}></Route>
             <Route path="/statistics" element={<Statistics />}></Route>
             <Route path="/settings" element={<Settings />}></Route>
           </Routes>

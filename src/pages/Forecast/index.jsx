@@ -11,7 +11,8 @@ import {
   LineElement,
   Legend,
   Tooltip,
-  LineController
+  LineController,
+  BarController
 } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
 ChartJS.register(
@@ -22,7 +23,8 @@ ChartJS.register(
   PointElement,
   LineElement,
   Legend,
-  Tooltip
+  Tooltip,
+  BarController
 );
 
 function Forecast() {
@@ -38,7 +40,7 @@ function Forecast() {
   useEffect(()=> {
     axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${JSON.parse(city).lat}&lon=${JSON.parse(city).lon}&exclude=current,minutely,hourly,alerts&appid=${API_KEY}&units=metric`)
       .then(res => {
-        console.warn(res.data.daily);
+        console.log(res.data.daily);
         getDateLabels(res.data.daily);
         setTempLine(computeTempLine(res.data.daily));
         setFeelsLike(computeFeelsLikeTemp(res.data.daily));
