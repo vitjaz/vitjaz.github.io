@@ -11,9 +11,11 @@ import {
   LineElement,
   Legend,
   Tooltip,
+  LineController
 } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
 ChartJS.register(
+  LineController,
   LinearScale,
   CategoryScale,
   BarElement,
@@ -28,7 +30,6 @@ function Forecast() {
   const API_KEY = "8459744fe826f74f3d531b5bfb2929de";
   const [city, setCity] = useState('{"lat": 51.507351, "lon":-0.127758}');
   const [labels, setLabels] = useState([]);
-  const [response, setResponce] = useState({});
   const [tempLine, setTempLine] = useState([]);
   const [feelsLike, setFeelsLike] = useState([]);
   const [dewPoint, setDewPoint] = useState([]);
@@ -37,7 +38,6 @@ function Forecast() {
   useEffect(()=> {
     axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${JSON.parse(city).lat}&lon=${JSON.parse(city).lon}&exclude=current,minutely,hourly,alerts&appid=${API_KEY}&units=metric`)
       .then(res => {
-        setResponce(Array.from(res.data.daily));
         console.warn(res.data.daily);
         getDateLabels(res.data.daily);
         setTempLine(computeTempLine(res.data.daily));
